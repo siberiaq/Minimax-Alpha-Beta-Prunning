@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="initial-scale=1.0, width=device-width" name="viewport">
+	<title>Минимакс</title>
+	<!-- css -->
+	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
+	<script src="js/killme.js"></script>
+	<link href="css/base.min2.css" rel="stylesheet">
+	<link href="css/vis.css" rel="stylesheet" type="text/css">
+  	<style type="text/css">
+	    #Graph {
+	      height: 600px;
+	      background:#fafafa;
+	    }
+	    p {
+	      max-width:600px;
+	    }
+  	</style>
+	<!-- ie -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript"></script>
+			<script src="js/respond.js" type="text/javascript"></script>
+		<![endif]-->
+	<script type="text/javascript" src="js/vis.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body onload="draw();">
+	<header class="header">
+			<div id="Graph" style="height: 400px;"></div>
+			<div id="Settings">
+				<div style="margin-left: 69px;">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="26" placeholder="" type="text" value="2">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="27" placeholder="" type="text" value="4">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="28" placeholder="" type="text" value="1">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="29" placeholder="" type="text" value="3">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="30" placeholder="" type="text" value="5">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="31" placeholder="" type="text" value="1">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="32" placeholder="" type="text" value="0">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="33" placeholder="" type="text" value="4">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="34" placeholder="" type="text" value="0">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="35" placeholder="" type="text" value="1">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="36" placeholder="" type="text" value="0">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="37" placeholder="" type="text" value="2">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="38" placeholder="" type="text" value="1">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="39" placeholder="" type="text" value="0">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="40" placeholder="" type="text" value="1">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="41" placeholder="" type="text" value="2">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="42" placeholder="" type="text" value="0">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="43" placeholder="" type="text" value="5">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="44" placeholder="" type="text" value="0">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="45" placeholder="" type="text" value="3">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="46" placeholder="" type="text" value="7">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="47" placeholder="" type="text" value="1">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="48" placeholder="" type="text" value="5">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="49" placeholder="" type="text" value="2">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="50" placeholder="" type="text" value="6">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="51" placeholder="" type="text" value="7">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="52" placeholder="" type="text" value="7">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="53" placeholder="" type="text" value="8">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="54" placeholder="" type="text" value="6">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="55" placeholder="" type="text" value="2">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="56" placeholder="" type="text" value="3">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="57" placeholder="" type="text" value="1">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="58" placeholder="" type="text" value="2">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="59" placeholder="" type="text" value="4">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="60" placeholder="" type="text" value="6">
+					<input class="form-control" style="width: 31px; display: inline; font-size: 13px; color: #fff;" id="61" placeholder="" type="text" value="6">
+				</div>
+			</div>
+		</table>
+	</header>
+	<footer class="footer">
+		<br/><br/>
+		<button onclick="UpdateValues();" class="btn btn-blue waves-button waves-light waves-effect" type="submit">Применить</button>
+		<button onclick="Minimax();" class="btn btn-blue waves-button waves-light waves-effect" type="submit">минимакс</button>
+		<button onclick="AlphaBeta();" class="btn btn-blue waves-button waves-light waves-effect" type="submit">&alpha;-&beta; отсечение</button>
+		<br><br><br><br><br><br><br><br><br>
+	</footer>
+	</body>
+	<script src="js/base.min.js" type="text/javascript"></script>
+	<script src="js/object-traverse.min.js" type="text/javascript"></script>
+</body>
+</html>
